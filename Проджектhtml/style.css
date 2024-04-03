@@ -1,0 +1,208 @@
+@font-face {
+    font-family: "Anonymous Pro";
+    font-weight: 700;
+    src: url(C:\Users\Roman\Desktop\Проджектhtml\Pages\fonts\AnonymousPro-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Anonymous Pro";
+    src: url(Pages\fonts\AnonymousPro-Regular.ttf);
+}
+
+.header {
+    background: #ffffff;
+    height: 110px;
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.header .logo {
+    color: #121723;
+}
+
+.header-content {
+    width: 100%;
+    max-width: 1160px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-list {
+    display: inline-flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.social-list a {
+    text-decoration: none;
+}
+
+.header a {
+    color: black;
+    font-family: Anonymous Pro;
+    font-size: 48px;
+    padding: 15px;
+}
+
+.content {
+    display: inline-flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name-collection {
+    width: 100%;
+    max-width: 1160px;
+    display: inline-block;
+}
+
+.content h1 {
+    color: var(--black, #121723);
+    font-family: Anonymous Pro;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.content h2 {
+    color: var(--black, #121723);
+    font-family: Anonymous Pro;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.content p {
+    color: var(--black, #121723);
+    font-family: Anonymous Pro;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.content-cards {
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1160px;
+}
+
+.card {
+    border-radius: 12px;
+    width: 371px;
+    display: inline-block;
+    background-color: white;
+    margin-bottom: 24px;
+    transition-duration: 500ms;
+    transition-property: box-shadow, transform;
+
+}
+
+.card:hover {
+    box-shadow: 0px 4px 4px 0px #00000040;
+    transform: translateY(-10px);
+    transition-duration: 500ms;
+    transition-property: box-shadow, transform;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.photo {
+    width: 100%;
+    height: 270px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+
+}
+
+.photo img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.card .description {
+    margin: 32px 24px 32px 24px;
+}
+
+
+
+.footer {
+    height: 142px;
+    background-color: #121723;
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-content {
+    width: 100%;
+    max-width: 1160px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+    margin-top: 30px;
+}
+
+.footer .social-list {
+    margin: 0px;
+}
+
+.footer a {
+    color: white;
+    font-family: Anonymous Pro;
+}
+
+.footer p {
+    color: var(--text_gray, #A1A6B4);
+    font-family: Anonymous Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.footer hr {
+    border-color: #E6E8EC66;
+    width: 100%;
+    max-width: 1160px;
+}
+
+@media screen and (max-width: 501px) {
+
+    .header {
+        height: 156px;
+    }
+    .header-content {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .content h1 {
+        font-size: 32px;
+        margin: 32px 16px;
+    }
+    .footer {
+        height: 195px;
+    }
+    .footer-content {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 120px;       
+    }
+}
